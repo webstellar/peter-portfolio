@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `I'm Peter Onyegbule`,
+    description: `My portfolio website built with Gatsby and WordPress`,
+    author: `@peteronyegbule`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
@@ -25,6 +25,15 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-tailwindcss`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url:
+          process.env.WPGRAPHQL_URL ||
+          `http://webstellar.com.ng/ibizzapithotel/graphql`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
