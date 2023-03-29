@@ -30,8 +30,7 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url:
-          process.env.WPGRAPHQL_URL ||
-          `http://webstellar.com.ng/ibizzapithotel/graphql`,
+          process.env.WPGRAPHQL_URL || `https://webstellar.com.ng/po/graphql`,
       },
     },
     {
