@@ -12,9 +12,10 @@ module.exports = {
     title: `I'm Peter Onyegbule`,
     description: `My portfolio website built with Gatsby and WordPress`,
     author: `@peteronyegbule`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://peteronyegbule.ng`,
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,18 +26,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-tailwindcss`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.WPGRAPHQL_URL || `http://webstellar.com.ng/po/graphql`,
+        url: "https://webstellar.com.ng/po/graphql",
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Peter`,
+        short_name: `Peter's Portfolio`,
+        description:
+          "The application is built specifically to showcase Peter's works",
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
@@ -44,6 +46,23 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Josefin Sans\:300,400,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
       },
     },
   ],
