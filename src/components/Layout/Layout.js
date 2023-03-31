@@ -8,9 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../Header/header"
+import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
