@@ -2,10 +2,15 @@ import * as React from "react"
 
 import Layout from "../components/Layout/Layout"
 import Seo from "../components/Head/Seo"
+import Intro from "../components/Intro/Intro"
+import About from "../components/About/About"
+import Resume from "../components/Resume/Resume"
 
 const IndexPage = () => (
   <Layout>
-    <div>I think it's working now!</div>
+    <Intro />
+    <About />
+    <Resume />
   </Layout>
 )
 

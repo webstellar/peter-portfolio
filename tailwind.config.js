@@ -4,6 +4,7 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     fontFamily: {
@@ -12,7 +13,11 @@ module.exports = {
     borderRadius: {
       large: "20px",
     },
-    extend: {},
+    extend: {
+      colors: {
+        "yellow-orange": "#F6701C",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 }

@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 export const useMenuQuery = () => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query HeadeQuery {
       site {
         siteMetadata {
           title

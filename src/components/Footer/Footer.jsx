@@ -2,7 +2,10 @@ import * as React from "react"
 
 const Footer = () => (
   <footer className="bg-white p-6">
-    <nav className="p-4 lg:px-6 bg-slate-900 rounded-large" aria-label="Global">
+    <nav
+      className="mx-auto flex max-w-screen-2xl items-center justify-between p-4 lg:px-6 bg-gray-950 rounded-large"
+      aria-label="Global"
+    >
       <div className="flex justify-start"></div>
       <div className="flex justify-center text-white">
         © {new Date().getFullYear()} &middot; Built with
