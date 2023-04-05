@@ -15,7 +15,6 @@ module.exports = {
     siteUrl: `https://peteronyegbule.ng`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

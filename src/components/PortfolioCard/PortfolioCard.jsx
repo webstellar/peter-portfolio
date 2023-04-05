@@ -11,14 +11,14 @@ const PortfolioCard = ({ item }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="block max-w-sm rounded-lg bg-gray-200 shadow-lg">
+      <div className="block max-w-sm rounded-large bg-gray-200 shadow-lg">
         <a
           href={item.portfolioUrl}
           data-te-ripple-init
           data-te-ripple-color="light"
         >
           <GatsbyImage
-            className="rounded-t-lg w-full h-[20rem]"
+            className="rounded-t-lg w-full h-[10rem] md:h-[18rem]"
             image={portfolioImage}
             alt={item?.portfolioTitle}
           />
@@ -26,7 +26,7 @@ const PortfolioCard = ({ item }) => {
         <div className="p-4">
           <div className="flex justify-between mx-auto items-center">
             <div className="w-5/6 text-left">
-              <h5 className="text-[15px] font-bold leading-tight text-neutral-800" >
+              <h5 className="text-[15px] font-bold leading-tight text-neutral-800">
                 {item.portfolioTitle}
               </h5>
             </div>
