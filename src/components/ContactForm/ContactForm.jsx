@@ -16,6 +16,7 @@ const ContactForm = () => {
                 className="peer block min-h-[auto] w-full rounded border-0 bg-white py-[0.50rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-gray-500 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="emailInput"
                 placeholder="Email"
+                name="email"
               />
               <label
                 htmlFor="emailInput"
@@ -31,6 +32,7 @@ const ContactForm = () => {
                 id="exampleFormControlTextarea1"
                 rows="6"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <label
                 htmlFor="exampleFormControlTextarea1"
