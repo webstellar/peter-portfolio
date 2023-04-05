@@ -47,7 +47,6 @@ function Seo({ description, title, children }) {
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap"
         rel="stylesheet"
       ></link>
-      <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
       {children}
     </>
   )

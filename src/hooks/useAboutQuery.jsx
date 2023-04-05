@@ -27,6 +27,7 @@ export const useAboutQuery = () => {
           skillStatement
           skills {
             skillset
+            skillsCount
           }
           socials {
             social
@@ -35,6 +36,7 @@ export const useAboutQuery = () => {
           toolStatement
           tools {
             toolset
+            toolsetCount
           }
           openingSentence
           portofilio {

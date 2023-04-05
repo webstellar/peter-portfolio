@@ -5,12 +5,22 @@ import Seo from "../components/Head/Seo"
 import Intro from "../components/Intro/Intro"
 import About from "../components/About/About"
 import Resume from "../components/Resume/Resume"
+import Certification from "../components/Certifications/Certification"
+import Tool from "../components/Tool/Tool"
+import Skill from "../components/Skill/Skill"
+import ContactForm from "../components/ContactForm/ContactForm"
+import Portfolio from "../components/Portfolio/Portfolio"
 
 const IndexPage = () => (
   <Layout>
     <Intro />
     <About />
     <Resume />
+    <Certification />
+    <Tool />
+    <Skill />
+    <Portfolio />
+    <ContactForm />
   </Layout>
 )
 
