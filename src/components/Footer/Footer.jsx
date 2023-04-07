@@ -8,10 +8,10 @@ const Footer = () => (
     >
       <div className="flex justify-start"></div>
       <div className="flex justify-center text-white">
-        © {new Date().getFullYear()} &middot; Built with
-        <a href="https://www.gatsbyjs.com" className="no underline">
-          {" "}
-          Gatsby
+        © {new Date().getFullYear()} &middot; Built by
+        {` `}
+        <a href="https://www.peteronyegbule.ng" className="font-josefin">
+          Peter Onyegbule
         </a>
       </div>
       <div className="flex justify-end"></div>
