@@ -11,9 +11,7 @@ const Portfolio = () => {
   } = useAboutQuery()
 
   const portfolio = aboutMe?.portofilio
-
   const [item, setItem] = React.useState(portfolio)
-
   const menuItems = [...new Set(portfolio?.map(Val => Val.portfolioTag))]
 
   const filterItem = curcat => {
