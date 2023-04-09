@@ -1,15 +1,19 @@
 import * as React from "react"
 import Socials from "../Socials/Socials"
+import { useForm, ValidationError } from "@formspree/react"
+import { toast } from "react-toastify"
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xdovpego")
+  if (state.succeeded) {
+    toast.success("Your message was sent successfully")
+    return <p className="text-lg text-gray-950">Thanks for contacting me!</p>
+  }
   return (
     <div className="bg-white p-6" id="contact">
       <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between bg-gray-950 rounded-large">
         <div className="text-left grid grid-rows-1 gap-y-6 lg:w-2/4 py-20 p-6 lg:px-16 ">
-          <form
-            action="https://getform.io/f/4a6adcbe-1f77-4cd6-a6dc-c81b91d5e52a"
-            method="POST"
-          >
+          <form onSubmit={handleSubmit}>
             <div className="relative mb-3 w-full" data-te-input-wrapper-init>
               <input
                 type="email"
@@ -24,6 +28,11 @@ const ContactForm = () => {
               >
                 Email
               </label>
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
 
             <div className="relative mb-3 w-full" data-te-input-wrapper-init>
@@ -40,6 +49,11 @@ const ContactForm = () => {
               >
                 Message
               </label>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
 
             <div className="lg:text-right">
@@ -48,6 +62,7 @@ const ContactForm = () => {
                 className="inline-block rounded bg-yellow-orange px-7 pt-3 pb-2.5 text-sm font-bold uppercase leading-normal text-gray-950 shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
                 data-te-ripple-init
                 data-te-ripple-color="light"
+                disabled={state.submitting}
               >
                 Let's Talk
               </button>
