@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Peter`,
-        short_name: `Peter's Portfolio`,
+        name: `Peter Onyegbule`,
+        short_name: `Peter Onyegbule's Portfolio`,
         description:
           "The application is built specifically to showcase Peter's works",
         start_url: `/`,
@@ -45,7 +45,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/peteronyegbule-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/peter-onyegbule-svg.webp`, // This path is relative to the root of the site.
       },
     },
     {
