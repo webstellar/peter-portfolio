@@ -36,9 +36,9 @@ const Portfolio = () => {
           />
         </div>
 
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-14 px-6">
-          {item.map((item, i) => (
-            <PortfolioCard key={i} item={item} />
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 md:gap-y-10 md:gap-x-14 gap-5 px-6">
+          {item.map((val, i) => (
+            <PortfolioCard key={i} item={val} />
           ))}
         </div>
       </div>
