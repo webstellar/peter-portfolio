@@ -7,8 +7,6 @@ const PortfolioCard = ({ item }) => {
     item?.portfolioImage?.localFile?.childImageSharp?.gatsbyImageData
   )
 
-  console.log(portfolioImage)
-
   return (
     <div className="flex justify-center">
       <div className="block max-w-sm rounded-large bg-gray-200 shadow-lg">
@@ -18,12 +16,12 @@ const PortfolioCard = ({ item }) => {
           data-te-ripple-color="light"
         >
           <GatsbyImage
-            className="rounded-t-lg min-w-full md:w-full h-[5rem] md:h-[15rem]"
+            className="rounded-t-lg min-w-full md:w-full h-[10rem] md:h-[15rem]"
             image={portfolioImage}
             alt={item?.portfolioTitle}
           />
         </a>
-        <div className="p-4 w-full">
+        <div className="px-4 py-2 w-full">
           <div className="flex justify-between mx-auto items-center">
             <div className="w-5/6 text-left">
               <h5 className="text-[15px] font-bold leading-tight text-neutral-800">

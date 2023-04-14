@@ -12,7 +12,7 @@ const Header = () => {
   const { site, menu } = useMenuQuery()
 
   return (
-    <header className="bg-white p-6">
+    <header className="bg-white md:p-6 p-3">
       <nav
         className="mx-auto flex max-w-screen-2xl items-center justify-between p-4 lg:px-16 bg-gray-950 rounded-large"
         aria-label="Global"

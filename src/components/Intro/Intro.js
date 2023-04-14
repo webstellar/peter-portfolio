@@ -14,8 +14,8 @@ const Intro = () => {
 
   return (
     <div className="bg-white md:p-6 p-3" id="home">
-      <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between py-20 p-6 lg:px-16 bg-gray-950 rounded-large">
-        <div className="order-last md:order-first text-left grid grid-rows-1 gap-y-8 lg:w-2/3">
+      <div className="mx-auto flex flex-wrap flex-row max-w-screen-2xl items-center justify-between py-20 p-6 lg:px-16 bg-gray-950 rounded-large">
+        <div className="order-2 md:order-1 text-left grid grid-rows-1 gap-y-8 lg:w-2/3">
           <p className="text-xl uppercase text-white">
             {aboutMe?.openingSentence}
           </p>
@@ -31,11 +31,11 @@ const Intro = () => {
             </Link>
           </div>
         </div>
-        <div className="order-first md:order-last mx-auto lg:w-1/3">
+        <div className="order-1 md:order-2 mx-auto lg:w-1/3">
           <GatsbyImage
             image={imageData}
             alt="message"
-            className="lg:h-4/6 lg:w-4/6 w-4/6 h-4/6"
+            className="lg:h-4/6 lg:w-4/6 w-full h-4/6  mb-10 md:mb-0"
           />
         </div>
       </div>

@@ -14,7 +14,7 @@ const About = () => {
   return (
     <div className="bg-white md:p-6 p-3" id="about">
       <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between bg-gray-950 rounded-large">
-        <div className="text-left grid grid-rows-1 gap-y-6 lg:w-2/4 py-20 p-6 lg:px-16 ">
+        <div className="md:order-first order-last text-left grid grid-rows-1 gap-y-6 lg:w-2/4 py-20 p-6 lg:px-16 ">
           <p className="text-[20px] uppercase text-yellow-orange">About me</p>
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
             {aboutMe?.openingSentence}
@@ -24,11 +24,11 @@ const About = () => {
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </div>
-        <div className="lg:w-2/4 p-0">
+        <div className="md:order-last order-first lg:w-2/4 p-0">
           <GatsbyImage
             image={featuredImageData}
             alt="message"
-            className="w-full h-full min-h-full max-h-full object-cover"
+            className="w-full h-full min-h-full max-h-full object-cover rounded-l-lg"
           />
         </div>
       </div>
