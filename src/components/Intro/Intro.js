@@ -13,7 +13,7 @@ const Intro = () => {
   )
 
   return (
-    <div className="bg-white p-6" id="home">
+    <div className="bg-white md:p-6 p-3" id="home">
       <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between py-20 p-6 lg:px-16 bg-gray-950 rounded-large">
         <div className="order-last md:order-first text-left grid grid-rows-1 gap-y-8 lg:w-2/3">
           <p className="text-xl uppercase text-white">

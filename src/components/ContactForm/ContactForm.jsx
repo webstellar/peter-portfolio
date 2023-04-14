@@ -10,7 +10,7 @@ const ContactForm = () => {
     return <p className="text-lg text-gray-950">Thanks for contacting me!</p>
   }
   return (
-    <div className="bg-white p-6" id="contact">
+    <div className="bg-white md:p-6 p-3" id="contact">
       <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between bg-gray-950 rounded-large">
         <div className="text-left grid grid-rows-1 gap-y-6 lg:w-2/4 py-20 p-6 lg:px-16 ">
           <form onSubmit={handleSubmit}>

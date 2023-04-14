@@ -12,7 +12,7 @@ const About = () => {
   )
 
   return (
-    <div className="bg-white p-6" id="about">
+    <div className="bg-white md:p-6 p-3" id="about">
       <div className="mx-auto lg:flex flex-row max-w-screen-2xl items-center justify-between bg-gray-950 rounded-large">
         <div className="text-left grid grid-rows-1 gap-y-6 lg:w-2/4 py-20 p-6 lg:px-16 ">
           <p className="text-[20px] uppercase text-yellow-orange">About me</p>

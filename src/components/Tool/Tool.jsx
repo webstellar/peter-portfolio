@@ -18,7 +18,7 @@ const Tool = () => {
   })
 
   return (
-    <div className="bg-white p-6" id="#resume">
+    <div className="bg-white md:p-6 p-3" id="#resume">
       <div className="mx-auto max-w-screen-2xl items-center justify-between bg-gray-950 rounded-large py-20 lg:px-16">
         <div className="text-center w-full">
           <p className="text-xl text-yellow-orange">My Tools</p>
