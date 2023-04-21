@@ -8,8 +8,6 @@ const PortfolioButton = ({ filterItem, menuItems, setItem }) => {
 
   const portfolio = aboutMe?.portofilio
 
-  console.log(menuItems)
-
   return (
     <div>
       <ul className="mb-5 flex list-none flex-wrap pl-0 flex-row">
