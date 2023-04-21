@@ -16,7 +16,7 @@ const PortfolioCard = ({ item }) => {
           data-te-ripple-color="light"
         >
           <GatsbyImage
-            className="rounded-t-lg min-w-full md:w-full h-[10rem] md:h-[15rem]"
+            className="rounded-t-lg min-w-full md:w-full h-[50rem] md:h-[15rem] bg-cover bg-top"
             image={portfolioImage}
             alt={item?.portfolioTitle}
           />
