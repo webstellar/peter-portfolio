@@ -10,7 +10,7 @@ const PortfolioButton = ({ filterItem, menuItems, setItem }) => {
 
   return (
     <div>
-      <ul className="mb-5 flex list-none flex-col flex-wrap pl-0 md:flex-row">
+      <ul className="mb-5 flex list-none flex-wrap pl-0 flex-row">
         <li className="flex-auto text-center">
           <button
             className="cursor-pointer my-2 rounded bg-transparent px-7 pt-4 pb-3.5 text-base font-medium capitalize leading-tight text-white data-[te-nav-active]:!bg-transparent data-[te-nav-active]:text-yellow-orange dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
