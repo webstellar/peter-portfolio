@@ -2,6 +2,11 @@ import * as React from "react"
 import { useAboutQuery } from "../../hooks/useAboutQuery"
 import { TagCloud } from "react-tagcloud"
 
+const options = {
+  luminosity: "light",
+  hue: "blue",
+}
+
 const Skill = () => {
   const {
     wpPage: { aboutMe },
@@ -41,6 +46,7 @@ const Skill = () => {
           <div className="p-6 lg:w-full">
             <TagCloud
               randomSeed
+              colorOptions={options}
               shuffle
               minSize={12}
               maxSize={35}
