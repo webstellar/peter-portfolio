@@ -30,7 +30,7 @@ const PortfolioCard = ({ item }) => {
             </div>
             <div className="w-1/6 text-right">
               <button type="button" className="" data-te-ripple-color="light">
-                <a href={item.portfolioUrl}>
+                <a href={item.portfolioUrl} target="_blank" rel="noreferrer">
                   <BiLinkExternal />
                 </a>
               </button>
