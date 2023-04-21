@@ -8,6 +8,8 @@ const PortfolioButton = ({ filterItem, menuItems, setItem }) => {
 
   const portfolio = aboutMe?.portofilio
 
+  console.log(menuItems)
+
   return (
     <div>
       <ul className="mb-5 flex list-none flex-wrap pl-0 flex-row">
@@ -20,7 +22,7 @@ const PortfolioButton = ({ filterItem, menuItems, setItem }) => {
             All
           </button>
         </li>
-        {menuItems?.map((tag, i) => (
+        {menuItems?.sort().map((tag, i) => (
           <li key={i} className="flex-auto text-center">
             <button
               className="cursor-pointer my-2 rounded bg-transparent px-7 pt-4 pb-3.5 text-base font-medium capitalize leading-tight text-white data-[te-nav-active]:!bg-transparent data-[te-nav-active]:text-yellow-orange dark:text-white dark:data-[te-nav-active]:text-primary-700 md:mr-4"
