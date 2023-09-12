@@ -43,6 +43,7 @@ export const useAboutQuery = () => {
             portfolioTitle
             portfolioUrl
             portfolioTag
+            portfolioYear
             portfolioImage {
               localFile {
                 childImageSharp {

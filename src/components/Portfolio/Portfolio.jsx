@@ -39,17 +39,16 @@ const Portfolio = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-4 md:gap-y-10 md:gap-x-14 gap-5 px-6">
           {item
             .sort(function (a, b) {
-              if (a.portfolioTitle < b.portfolioTitle) {
+              if (a.portfolioYear < b.portfolioYear) {
                 return -1
               }
-              if (a.portfolioTitle > b.portfolioTitle) {
+              if (a.portfolioYear > b.portfolioYear) {
                 return 1
               }
               return 0
             })
-            .map((val, i) => (
-              <PortfolioCard key={i} item={val} />
-            ))}
+            .map((val, i) => <PortfolioCard key={i} item={val} />)
+            .reverse()}
         </div>
       </div>
     </div>
